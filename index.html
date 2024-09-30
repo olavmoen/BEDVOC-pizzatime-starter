@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Store</title>
+    <link rel="stylesheet" href="site.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="pizza-container">
+        <div class="form-wrapper">
+            <h2>It's Pizza Time <span class="spider-icon">🕷</span></h2>
+            <form id="pizza-form" class="form">
+                <!--Pizza type-->
+                <div class="form-group-stacked">
+                    <!--Select with options-->
+                </div>
+                <!--Pizza size-->
+                <div class="form-group-stacked">
+                    <!--Select with options-->
+                </div>
+                <!--Toppings-->
+                <fieldset class="toppings-wrapper">
+                    <legend>Any toppings? (+10 NOK each)</legend>
+                    <!--Input (type checkbox) + labels-->
+                </fieldset>
+                <!--Quantity-->
+                <div class="inline-form-group">
+                    <!--Label + input, min 1, max 10, default value 1-->
+                </div>
+                <!--Form buttons-->
+                <div class="inline-form-group">
+                    <!--Sumbit and reset buttons-->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="order-summary-container">
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <ul id="order-list"></ul>
+            <p><strong>Total:</strong> <span id="order-total">0</span> NOK</p>
+        </div>
+
+        <div class="payment-panel">
+            <h3>Complete Your Purchase</h3>
+            <label for="credit-card">Enter your credit card number:</label>
+            <input type="text" id="credit-card" name="credit-card" placeholder="1234-5678-9012-3456">
+            <button class="btn-submit-payment" id="submit-payment">Pay</button>
+            <p id="payment-message"></p>
+        </div>
+    </div>
+</body>
+</html>

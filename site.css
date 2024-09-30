@@ -1,0 +1,165 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.spider-icon {
+    color:black;
+}
+
+/* Form Wrapper */
+.form-wrapper {
+    background-color: white;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+}
+
+/* Headings */
+h2, h3 {
+    color: #e60000;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+}
+
+/* Form styling */
+.form-group-stacked {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select, input[type="number"], input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Fieldset styling */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    padding: 0 5px;
+    font-weight: bold;
+    color: #e60000;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.inline-form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+/* Buttons */
+.btn-submit, .btn-clear, .btn-submit-payment {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-submit {
+    background-color: #e60000;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #cc0000;
+}
+
+.btn-clear {
+    background-color: #cb9d41;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #cb8802;
+}
+
+.btn-submit-payment {
+    background-color: #4bd835;
+    color: white;
+}
+
+.btn-submit-payment:hover {
+    background-color: #1cd000;
+}
+
+/* Order summary */
+#order-summary-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+}
+
+.order-summary ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+#order-list li {
+    text-align: right;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Payment panel */
+.payment-panel {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.payment-panel input {
+    padding: 10px;
+    width: 90%;
+    margin-top:5px;
+}
+
+#payment-message {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
