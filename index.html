@@ -16,23 +16,46 @@
                 <!--Pizza type-->
                 <div class="form-group-stacked">
                     <!--Select with options-->
+                    <select id="pizzaTypes">
+                        <option value="Margherita-100">Margerita &lpar;+100 NOK&rpar;</option>
+                        <option value="Pepperoni-120">Pepperoni &lpar;+120 NOK&rpar;</option>
+                        <option value="BBQ Chicken-130">BBQ Chicken &lpar;+130 NOK&rpar;</option>
+                        <option value="Vegetarian-110">Vegetarien &lpar;+110 NOK&rpar;</option>
+                        <option value="FriendlySpecial-140">Friendly Neighborhood Special &lpar;+140 NOK&rpar;</option>
+                      </select>
                 </div>
                 <!--Pizza size-->
                 <div class="form-group-stacked">
                     <!--Select with options-->
+                    <select id="pizzaSizes">
+                        <option value="Small-0">Small &lpar;No exstra cost&rpar;</option>
+                        <option value="Medium-20">Medium &lpar;+20 NOK&rpar;</option>
+                        <option value="Large-40">Large &lpar;+40 NOK&rpar;</option>
+                        <option value="SpideySize-60">Spidey Size &lpar;+60 NOK&rpar;</option>
+                    </select>
                 </div>
                 <!--Toppings-->
                 <fieldset class="toppings-wrapper">
                     <legend>Any toppings? (+10 NOK each)</legend>
                     <!--Input (type checkbox) + labels-->
+                    <input type="checkbox" value="Pepperoni-10" name="toppings">
+                    <label>Pepperoni &lpar;+10 NOK&rpar;</label><br>
+                    <input type="checkbox" value="Mushrooms-10" name="toppings">
+                    <label>Mushrooms &lpar;+10 NOK&rpar;</label><br>
+                    <input type="checkbox" value="WebSlingingSpice-10" name="toppings">
+                    <label>Web-slinging Spice &lpar;+10 NOK&rpar;</label><br>
                 </fieldset>
                 <!--Quantity-->
                 <div class="inline-form-group">
                     <!--Label + input, min 1, max 10, default value 1-->
+                    <label>Quantity:</label>
+                    <input id="quantity" type="number" value="1" min="1" max="10">
                 </div>
                 <!--Form buttons-->
                 <div class="inline-form-group">
                     <!--Sumbit and reset buttons-->
+                    <button id="submitButton" class="btn-submit" type="submit">Add to order</button>
+                    <button class="btn-clear" type="reset">Clear order</button>
                 </div>
             </form>
         </div>
