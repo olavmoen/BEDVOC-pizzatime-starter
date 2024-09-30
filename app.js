@@ -1,8 +1,8 @@
 let orderPizzas = [];
 let orderTotal = 0;
-const submitBtn = document.getElementById("submitButton");
+const pizzaForm = document.getElementById("pizza-form");
 
-submitBtn.addEventListener("click", handleSubmit);
+pizzaForm.addEventListener("submit", handleSubmit);
 
 function handleSubmit(e) {
     e.preventDefault();
@@ -43,4 +43,16 @@ function handleSubmit(e) {
     orderPizzas.push(pizza);
     console.log(pizza);
     console.log("Your total is "+orderTotal+ " NOK");
+
+    this.reset();
+    updateOrderSummary();
+}
+
+function updateOrderSummary() {
+    $("#order-list").empty();
+    orderPizzas.forEach((pizza) => {
+        $("#order-list").append('<li>'+pizza.quantity+" x "+pizza.pizzaName+ " - " +pizza.pizzaTotalPrice+ " NOK" +'</li>');
+    }); 
+
+    $("#order-total").html(orderTotal);
 }
